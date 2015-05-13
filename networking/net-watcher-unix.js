@@ -27,7 +27,7 @@ const
             connection.write("File " + filename + " changed: " + Date.now() + "\n");
         });
 
-        // cleanup
+        // cleanup i.e. closing the connection
         connection.on("close", function() {
             console.log("Subscriber disconnected.");
             watcher.close();

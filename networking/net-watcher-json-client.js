@@ -14,7 +14,7 @@ client.on("data", function(data) {
         console.log("Now watching: " + message.file);
     } else if (message.type === "changed") {
         let date = new Date(message.timestamp);
-        console.log("File " + message.file + "changed at " + date);
+        console.log("File " + message.file + " changed at " + date);
     } else {
         console.log(message);
         throw Error("Unrecognized message type");

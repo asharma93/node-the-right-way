@@ -23,7 +23,7 @@ const
                 'et.txt", "timestamp": 1358175758495}' + "\n"
             );
             connection.end();
-        }, 1000);
+        }, 4000);
 
         // cleanup
         connection.on("end", function() {
