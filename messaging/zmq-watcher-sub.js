@@ -1,4 +1,4 @@
-"use-strict";
+"use strict";
 
 /*
     This is the SUB portion of ZeroMQ. We are explicitly subscribing
