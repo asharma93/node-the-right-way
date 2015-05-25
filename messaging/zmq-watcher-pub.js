@@ -2,8 +2,10 @@
 
 /*
     ZeroMQ is a robust networking package that we will use in this section.
-    This is our publisher file that waits for a subscriber to connect. On connecting,
-    We send a blob of JSON down the wire.
+    This is the PUB portion of ZeroMQ that waits for subscribers to connect. Once connected,
+    we send a blob of JSON down the wire each time the target.txt file is changed. All
+    subscribers will receive the JSON.
+    Run: node --harmony zmq-watcher-pub.js target.txt
 */
 
 const
